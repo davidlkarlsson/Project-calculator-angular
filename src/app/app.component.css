@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  background-color: #d8dde1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fixerar footern till en fast position */
+  bottom: 0; /* Placerar footern vid sidans nederkant */
+  left: 0; /* Sträcker sig från vänster sida */
+  width: 100%; /* Gör att footern fyller hela sidans bredd */
+  background-color: #d8dde1;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5); /* Skugga ovanför footern*/
+  height: 80px;
+  padding: 0 20px; /* Lägg till lite sidopadding */
+}
+
+.navlinks {
+  display: flex;
+  gap: 5px;
+}
+
+.navlinks a {
+  font-size: 18px; /* Sätter textstorleken till 18px */
+  text-decoration: none;
+  color: #555;
+  padding: 8px 8px;
+  border-radius: 2px;
+}
+
+.navlinks a:hover {
+  background-color: #ff9500;
+  color: white; /* Ändrar textfärgen för att kontrastera med bakgrundsfärgen */
+}
+
+.navlinks a.active {
+  background-color: #ff9500;
+  color: white;
+}
