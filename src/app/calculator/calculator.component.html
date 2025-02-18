@@ -1,0 +1,44 @@
+<body>
+
+    <section>
+
+        <div class="calc-header">
+            <h1>Calculator</h1>
+            <!--Input for user to see-->
+            <input [(ngModel)]="input" type="text" (keydown.enter)="calculateResult()"/>
+        </div>
+        
+            <article class="calculator">
+
+                <!-- Row 1: clear + delete -->
+                <button class="clear" (click)="clear()">AC</button>
+                <button class="delete" (click)="deleteLast()">⌫</button>
+
+                <!-- Row 2: Numbers 7, 8, 9 + Division -->
+                <button class="number" (click)="appendNumber('7')">7</button>
+                <button class="number" (click)="appendNumber('8')">8</button>
+                <button class="number" (click)="appendNumber('9')">9</button>
+                <button class="operator" (click)="appendOperator('/')">/</button>
+            
+                <!-- Row 2: Numbers 4, 5, 6 + Multiplication -->
+                <button class="number" (click)="appendNumber('4')">4</button>
+                <button class="number" (click)="appendNumber('5')">5</button>
+                <button class="number" (click)="appendNumber('6')">6</button>
+                <button class="operator" (click)="appendOperator('*')">*</button>
+            
+                <!-- Row 3: Numbers 1, 2, 3 + Subtraction -->
+                <button class="number" (click)="appendNumber('1')">1</button>
+                <button class="number" (click)="appendNumber('2')">2</button>
+                <button class="number" (click)="appendNumber('3')">3</button>
+                <button class="operator" (click)="appendOperator('-')">-</button>
+            
+                <!-- Row 4: AC, Number 0, Comma, Addition -->
+                <button class="number" (click)="appendNumber('0')">0</button>
+                <button class="number" (click)="appendComma('.')">,</button>
+                <button class="calculateResult" (click)="calculateResult()">=</button>
+                <button class="operator" (click)="appendOperator('+')">+</button>
+             
+        </article>
+    </section>
+
+</body>
