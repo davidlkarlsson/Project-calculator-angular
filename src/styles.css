@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box; /* Gör så att padding inte påverkar storleken */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+  }
