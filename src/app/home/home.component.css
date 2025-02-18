@@ -1,0 +1,13 @@
+/* Lägg till en container för att centrera innehållet */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centrerar horisontellt */
+    align-items: center;
+    height: auto;            /* Gör att containern fyller hela skärmen */
+    text-align: center;       /* Centrerar texten inom h1 */ 
+  }
+  
+  h1 {
+    font-size: 3rem;         
+  }
